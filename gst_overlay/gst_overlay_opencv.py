@@ -59,7 +59,7 @@ class GstOverlayOpenCv(GstBase.BaseTransform):
         overlay = self.overlay()
         x = width - overlay.shape[1] 
         y = height - overlay.shape[0] 
-        draw_image(frame, self.overlay(), x, y)
+        draw_image(frame, overlay, x, y)
 
         return Gst.FlowReturn.OK
 

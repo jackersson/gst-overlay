@@ -79,7 +79,7 @@ class GstOverlayCairo(GstBase.BaseTransform):
 
             # Documentation: https://www.cairographics.org/FAQ/
             # How do I paint on surface
-            context.set_source_surface(self.overlay(), x, y)
+            context.set_source_surface(overlay, x, y)
             context.paint()
         except Exception as e:
             logging.error(e)

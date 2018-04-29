@@ -61,6 +61,7 @@ else:
 command += 'videoconvert ! '
 if args["fps"]:
     command += 'fpsdisplaysink video-sink=gtksink sync=false'
+    # command += ' x264enc tune=zerolatency ! mp4mux ! filesink location=out_opencv.mpg sync=false'
 else:
     command += 'gtksink sync=false'
 
