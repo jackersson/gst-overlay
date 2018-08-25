@@ -1,4 +1,4 @@
-# gst-filter
+# gst-overlay
 Simple Python Gstreamer Overlay Plugin.
 Overlay implemented with OpenCV, PyCairo
 
